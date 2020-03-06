@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15992" started-at="2020-03-06T22:23:26 IST" finished-at="2020-03-06T22:23:42 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15992" started-at="2020-03-06T22:23:26 IST" finished-at="2020-03-06T22:23:42 IST">
+      <class name="SeleniumAutomation.Automation.NotificationTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SeleniumAutomation.Automation.NotificationTest@543e710e]" name="init" is-config="true" duration-ms="8117" started-at="2020-03-06T22:23:26 IST" finished-at="2020-03-06T22:23:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="test()[pri:0, instance:SeleniumAutomation.Automation.NotificationTest@543e710e]" name="test" duration-ms="5497" started-at="2020-03-06T22:23:34 IST" finished-at="2020-03-06T22:23:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumAutomation.Automation.NotificationTest@543e710e]" name="teardown" is-config="true" duration-ms="2306" started-at="2020-03-06T22:23:40 IST" finished-at="2020-03-06T22:23:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumAutomation.Automation.NotificationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
