@@ -1,25 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15384" started-at="2020-03-07T01:02:56 IST" finished-at="2020-03-07T01:03:11 IST">
+  <suite name="Default suite" duration-ms="52848" started-at="2020-03-07T21:31:57 IST" finished-at="2020-03-07T21:32:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15384" started-at="2020-03-07T01:02:56 IST" finished-at="2020-03-07T01:03:11 IST">
-      <class name="SeleniumAutomation.Automation.NotificationTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:SeleniumAutomation.Automation.NotificationTest@44f75083]" name="init" is-config="true" duration-ms="8521" started-at="2020-03-07T01:02:56 IST" finished-at="2020-03-07T01:03:04 IST">
+    <test name="Default test" duration-ms="52848" started-at="2020-03-07T21:31:57 IST" finished-at="2020-03-07T21:32:50 IST">
+      <class name="SeleniumAutomation.Automation.FactoryPatternTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="beforeTest" is-config="true" duration-ms="11" started-at="2020-03-07T21:31:57 IST" finished-at="2020-03-07T21:31:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="test()[pri:0, instance:SeleniumAutomation.Automation.NotificationTest@44f75083]" name="test" duration-ms="4974" started-at="2020-03-07T01:03:04 IST" finished-at="2020-03-07T01:03:09 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="beforeMethod" is-config="true" duration-ms="4082" started-at="2020-03-07T21:31:57 IST" finished-at="2020-03-07T21:32:02 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumAutomation.Automation.NotificationTest@44f75083]" name="teardown" is-config="true" duration-ms="1805" started-at="2020-03-07T01:03:09 IST" finished-at="2020-03-07T01:03:11 IST">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="launchGoogleTest()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="launchGoogleTest" duration-ms="3767" started-at="2020-03-07T21:32:02 IST" finished-at="2020-03-07T21:32:05 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SeleniumAutomation.Automation.NotificationTest -->
+        </test-method> <!-- launchGoogleTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="afterMethod" is-config="true" duration-ms="964" started-at="2020-03-07T21:32:05 IST" finished-at="2020-03-07T21:32:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="beforeMethod" is-config="true" duration-ms="3332" started-at="2020-03-07T21:32:06 IST" finished-at="2020-03-07T21:32:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="launchTestAutomationGuruTest()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="launchTestAutomationGuruTest" duration-ms="5102" started-at="2020-03-07T21:32:10 IST" finished-at="2020-03-07T21:32:15 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Vinsguru] but found [TestAutomationGuru – A technical blog on test automation]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Vinsguru] but found [TestAutomationGuru – A technical blog on test automation]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at SeleniumAutomation.Automation.FactoryPatternTest.launchTestAutomationGuruTest(FactoryPatternTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTestAutomationGuruTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="afterMethod" is-config="true" duration-ms="841" started-at="2020-03-07T21:32:15 IST" finished-at="2020-03-07T21:32:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="beforeMethod" is-config="true" duration-ms="3317" started-at="2020-03-07T21:32:16 IST" finished-at="2020-03-07T21:32:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="launchYahooTest()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="launchYahooTest" duration-ms="30472" started-at="2020-03-07T21:32:19 IST" finished-at="2020-03-07T21:32:49 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment] but found [Yahoo]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Yahoo India | News, Finance, Cricket, Lifestyle and Entertainment] but found [Yahoo]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at SeleniumAutomation.Automation.FactoryPatternTest.launchYahooTest(FactoryPatternTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchYahooTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SeleniumAutomation.Automation.FactoryPatternTest@5427c60c]" name="afterMethod" is-config="true" duration-ms="928" started-at="2020-03-07T21:32:49 IST" finished-at="2020-03-07T21:32:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- SeleniumAutomation.Automation.FactoryPatternTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
