@@ -2,9 +2,9 @@ package com.automation.PageObject;
 
 import java.util.concurrent.TimeUnit;
 
+import org.awaitility.Awaitility;
 import org.openqa.selenium.WebElement;
 
-import com.jayway.awaitility.Awaitility;
 
 public class NotificationValidator extends ElementValidator {
 

@@ -27,12 +27,10 @@
 	<classpathentry kind="lib" path="C:/Users/krsau/.m2/repository/org/awaitility/awaitility/3.1.6/awaitility-3.1.6.jar" sourcepath="C:/Users/krsau/.m2/repository/org/awaitility/awaitility/3.1.6/awaitility-3.1.6-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/krsau/.m2/repository/org/awaitility/awaitility/3.1.6/awaitility-3.1.6-javadoc.jar!/"/>
 			<attribute name="maven.groupId" value="org.awaitility"/>
 			<attribute name="maven.artifactId" value="awaitility"/>
 			<attribute name="maven.version" value="3.1.6"/>
-			<attribute name="maven.scope" value="test"/>
+			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
