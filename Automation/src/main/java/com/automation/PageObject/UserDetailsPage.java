@@ -11,6 +11,27 @@ public class UserDetailsPage extends Page {
 	
 	@FindBy(name = "username")
 	private WebElement username;
+	
+	@FindBy(name = "firstName")
+    private WebElement firstName;
+
+    @FindBy(name = "lastName")
+    private WebElement lastName;
+
+    @FindBy(name = "email")
+    private WebElement email;
+
+    @FindBy(name = "password")
+    private WebElement password;
+
+    @FindBy(name = "confirmPassword")
+    private WebElement confirmPassword;
+
+    @FindBy(name = "register")
+    private WebElement submit;
+    
+    @FindBy(name = "DOB")
+    private WebElement DOB;
 
 	public UserDetailsPage(WebDriver driver) {
 		this.driver=driver;
@@ -29,6 +50,26 @@ public class UserDetailsPage extends Page {
 	@Override
 	public boolean isAt() {
 		return this.username.isDisplayed();
+	}
+	
+	public UserDetailsPage setFirstname(String firstName) {
+		this.firstName.sendKeys(firstName);
+		return this;
+	}
+	
+	public UserDetailsPage setLastName(String lastName) {
+	     this.lastName.sendKeys(lastName);
+	     return this;
+	}
+	
+	public UserDetailsPage setDOB(String DOB) {
+		this.DOB.sendKeys(DOB);
+		return this;
+	}
+	
+	public UserDetailsPage setEmail(String email) {
+		this.email.sendKeys(email);
+		return this;
 	}
 	
 	

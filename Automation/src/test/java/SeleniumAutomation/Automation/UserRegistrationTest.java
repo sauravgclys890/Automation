@@ -30,6 +30,14 @@ public class UserRegistrationTest {
 		Assert.assertTrue(userDetailsPage.isAt());
 	}
 	
+	@Test(dependsOnMethods = "launch")
+	public void enterUserInfoAndSubmit()
+	{
+		
+		
+	}
+	
+	
 	
 	
 
