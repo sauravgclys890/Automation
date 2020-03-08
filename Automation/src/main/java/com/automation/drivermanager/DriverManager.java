@@ -28,5 +28,10 @@ public abstract class DriverManager {
 		return driver;
 	}
 	
+	public static WebDriver getChromeDriver() {
+		return DriverManagerFactory.getManager(DriverType.CHROME).getDriver();
+		
+	}
+	
 
 }

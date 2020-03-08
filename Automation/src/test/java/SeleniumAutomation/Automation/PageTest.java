@@ -35,7 +35,13 @@ public class PageTest {
 	public void testPage() {
 		RegistrationPage.using(driver).launch().setFirstName("fn").setLastName("ln").setPassword("abcd").setConfirmPassword("abcd").submit();
 		
+		
+	}
+	
+	@Test
+	public void testLoginPage() {
 		LoginPage.using(driver).setUsername("abcd").setPassword("abcd").login();
+		
 	}
 	
      
