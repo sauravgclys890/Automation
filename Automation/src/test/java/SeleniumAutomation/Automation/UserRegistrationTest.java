@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.automation.PageObject.ProductSearchPage;
 import com.automation.PageObject.UserDetailsPage;
 import com.automation.drivermanager.DriverManager;
 
@@ -12,7 +13,7 @@ public class UserRegistrationTest {
 	
 	private WebDriver driver;
 	private UserDetailsPage userDetailsPage;
-	//private ProductSearchPage productSearchPage;
+	private ProductSearchPage productSearchPage;
 	//private OrderSummaryPage orderSummaryPage;
 	//private OrderConfirmationPage orderConfirmationPage;
 	
@@ -33,7 +34,10 @@ public class UserRegistrationTest {
 	@Test(dependsOnMethods = "launch")
 	public void enterUserInfoAndSubmit()
 	{
+		userDetailsPage.setFirstname("fn").setLastName("ln").setDOB("dob").setEmail("em").setAddress("address").submit();
 		
+		//validate if the page is loaded
+		Assert.assertTrue(ProductSearchPage.init(driver).isAt());
 		
 	}
 	

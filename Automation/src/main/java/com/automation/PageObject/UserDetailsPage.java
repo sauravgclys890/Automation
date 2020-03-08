@@ -32,6 +32,9 @@ public class UserDetailsPage extends Page {
     
     @FindBy(name = "DOB")
     private WebElement DOB;
+    
+    @FindBy(name ="address")
+    private WebElement address;
 
 	public UserDetailsPage(WebDriver driver) {
 		this.driver=driver;
@@ -72,6 +75,14 @@ public class UserDetailsPage extends Page {
 		return this;
 	}
 	
+	public UserDetailsPage setAddress(String address) {
+	   this.address.sendKeys(address);
+       return this;
+	}
+	
+	public void submit() {
+		submit.click();
+	}
 	
 
 }
