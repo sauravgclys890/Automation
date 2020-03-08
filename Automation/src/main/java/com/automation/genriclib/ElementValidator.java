@@ -1,4 +1,4 @@
-package com.automation.PageObject;
+package com.automation.genriclib;
 
 public abstract class ElementValidator {
 

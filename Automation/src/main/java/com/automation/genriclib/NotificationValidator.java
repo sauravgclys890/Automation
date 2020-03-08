@@ -1,4 +1,4 @@
-package com.automation.PageObject;
+package com.automation.genriclib;
 
 import java.util.concurrent.TimeUnit;
 

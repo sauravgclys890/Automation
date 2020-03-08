@@ -7,9 +7,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.automation.PageObject.ElementValidator;
 import com.automation.PageObject.SamplePage;
 import com.automation.PageObject.SamplePageNew;
+import com.automation.genriclib.ElementValidator;
 
 public class NotificationTest {
 	
