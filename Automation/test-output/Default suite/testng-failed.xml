@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumAutomation.Automation.FactoryPatternTest">
+      <class name="SeleniumAutomation.Automation.PageTest">
         <methods>
-          <include name="launchTestAutomationGuruTest"/>
-          <include name="afterMethod"/>
-          <include name="launchYahooTest"/>
-          <include name="beforeTest"/>
           <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="testPage"/>
         </methods>
-      </class> <!-- SeleniumAutomation.Automation.FactoryPatternTest -->
+      </class> <!-- SeleniumAutomation.Automation.PageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
